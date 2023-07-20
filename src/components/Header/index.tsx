@@ -1,18 +1,32 @@
 import React from "react";
 
+import { FaShoppingCart, FaSearch } from "react-icons/fa";
+
+import {
+  CartContainer,
+  Container,
+  HeaderContainer,
+  SearchContainer,
+  Title,
+} from "./styles";
+
 const Header: React.FC = () => {
-  return(
-    <header>
-      <h1>FICTSHOP</h1>
+  return (
+    <HeaderContainer>
+      <Container>
+        <Title>FICTSHOP</Title>
         <div>
-          <input type="text" />
-          <button>search</button>
+          <SearchContainer>
+            <input type="text" placeholder="search products" />
+            <button><FaSearch /></button>
+          </SearchContainer>
+          <CartContainer>
+            <button><FaShoppingCart /></button>
+          </CartContainer>
         </div>
-        <div>
-          <button>CART</button>
-        </div>
-    </header>
+      </Container>
+    </HeaderContainer>
   )
-}
+};
 
 export default Header;
