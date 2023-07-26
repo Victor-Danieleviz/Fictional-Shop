@@ -5,6 +5,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: center;
 
+  width: 100vw;
   height: 64px;
 
   background-color: #3d3fbf;

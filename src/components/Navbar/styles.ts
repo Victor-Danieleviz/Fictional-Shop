@@ -1,15 +1,21 @@
 import styled from 'styled-components'
 
-export const Container = styled.nav`
+export const NavContainer = styled.nav`
+  width: 100vw;
+  background-color: #3d80bf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  width: 100vw;
-  max-width: 1920px;
+  width: 100%;
+  max-width: 1600px;
   height: 32px;
-
-  background-color: #3d80bf;
 
   > * {
     display: flex;
