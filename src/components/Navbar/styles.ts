@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
 export const NavContainer = styled.nav`
-  width: 100vw;
-  background-color: #3d80bf;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 100vw;
+  
+  background-color: #3d80bf;
 `;
 
 export const Container = styled.div`
@@ -30,7 +32,7 @@ export const Container = styled.div`
     background: none;
     color: #fdfefe;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   button:hover {
