@@ -16,6 +16,7 @@ import {
   FaSearchDollar,
   FaTruck,
 } from 'react-icons/fa';
+import Products from './Products/index.tsx';
 
 const Home: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const Home: React.FC = () => {
       <Header />
       <Navbar />
       <MainContainer>
-        <h2>WELCOME TO THE BEST VIRTUAL STORE!</h2>
+      <h2>Welcome to the best virtual store!</h2>
         <AdvantagesContainer>
           <Advantage>
             <IconContainer>
@@ -49,10 +50,7 @@ const Home: React.FC = () => {
             <p>We work with the best suppliers in the segments.</p>
           </Advantage>
         </AdvantagesContainer>
-
-        <section>
-          <h3>PRODUCTS</h3>
-        </section>
+        <Products />
       </MainContainer>
       <Footer />
     </Container>

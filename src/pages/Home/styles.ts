@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: start;
   align-items: center;
 
-  background-color: white;
+  background-color: #ecf6f6;
   max-width: 1600px;
 `;
 
@@ -15,10 +15,12 @@ export const MainContainer = styled.main`
   flex-direction: column;
   align-items: center;
 
+  width: 100%;
+
   h2 {
     margin-top: 32px;
     margin-bottom: 32px;
-    color: #3d80bf;
+    color: #09121b;
     font-size: 32px;
     text-align: center;
   }
@@ -28,21 +30,33 @@ export const MainContainer = styled.main`
       font-size: 20px;
     }
   }
+
+  @media (max-width: 480px) {
+    max-width: 260px;
+  }
 `;
 
 export const AdvantagesContainer = styled.section`
   display: flex;
   justify-content: center;
   gap: 64px;
+  
   height: 320px;
+  width: 1280px;
 
   text-align: center;
 
   @media (max-width: 1280px) {
-    gap: 32px
+    gap: 32px ;
+    width: fit-content;
+  }
+  
+  @media (max-width: 768px) {
+    height: fit-content;
   }
 
   @media (max-width: 480px) {
+    width: 80%;
     gap: 16px
   }
 `; 
@@ -54,12 +68,13 @@ export const Advantage = styled.div`
   align-items: center;
 
   border-radius: 32px;
-  background-color: #ecf6f6;
+  background-color: white;
 
   width: 440px;
 
   h3 {
     color: #3d80bf;
+    font-weight: 600;
     font-size: 24px;
   }
 
