@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
   width: 100%;
-  margin-top: 32px;
   background-color: #ecf6f6;
   padding-bottom: 92px;
 
@@ -15,6 +14,15 @@ export const ProductsList = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+
+  @media (max-width: 1280px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const ProductContainer = styled.div`
@@ -29,6 +37,10 @@ export const ProductContainer = styled.div`
   border: 4px solid #dff0f0;
   border-radius: 16px;
   background-color: white;
+
+  @media (max-width: 480px) {
+    width: 240px;
+  }
 `;
 
 export const Title = styled.div`
