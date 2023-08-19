@@ -21,7 +21,7 @@
 
 ## Future implementations⏳
 
-* Page routing
+* Page routing for products
 * Data request via external API
 * Improvements for smaller screens [hamburguer menu]
 * Shopping cart
