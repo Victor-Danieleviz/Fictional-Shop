@@ -15,7 +15,9 @@ export default createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    overflow-x: hidden;
     
-    background-color: #ecf6f6;
+    background-color: #689dcf;
   }
 `;
